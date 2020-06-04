@@ -1,0 +1,39 @@
+---
+layout: page-layout.liquid
+title: Gallery
+scripts: <script src="/js/modal.js"></script><script src="/js/flickity.pkgd.js"></script>
+extra-css: <link rel="stylesheet" href="/css/flickity.css" />
+---
+
+<main>
+  <div class="residences-header">
+    <div class="residences-header-text">
+      <h2>Residences</h2>
+      <p>
+        Whether working in projects independently or partnering with other
+        developers. Mondreem creates design inspired properties that push the
+        boundaries of ever greater excellence and innovation with a dedication
+        towards luxury living.
+      </p>
+    </div>
+  </div>
+
+  <div class="residences-text">
+    <p>
+      These are some of the projects we completed. Please enjoy. If you want to
+      see more projects, visit our Projects page to see more of our selected
+      projects.
+    </p>
+    <a href="/projects" class="btn residences-btn">See more projects</a>
+  </div>
+
+  <div
+    class="carousel residences-slider"
+    data-flickity='{ "freeScroll": true, "freeScrollFriction": 0.03, "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": 5000 }'
+  >
+    <img src="/img/residences-1.jpg" alt="" />
+    <img src="/img/residences-2.jpg" alt="" />
+    <img src="/img/residences-3.jpg" alt="" />
+    <img src="/img/residences-4.jpg" alt="" />
+  </div>
+</main>

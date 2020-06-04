@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <!-- Toggle menu -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="menu-toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="ham-menu">
+        <div>
+          <div class="ham-menu-header">
+            <ul class="ham-menu-wrapper">
+              <li></li>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="/projects">Projects</a>
+              </li>
+                    <a href="/"><div class="mondreem-main-logo-dark"></div></a>
+              <li>
+                <a href="/residences">Residences</a>
+              </li>
+              <li>
+                <a href="/atelier">Atelier</a>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+
+          <ul class="ham-menu-list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/residences">Residences</a></li>
+            <li><a href="/atelier">Atelier</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+
+          <!-- Footer -->
+          <section class="ham-footer">
+            <div class="footer-container">
+              <div class="footer-social">
+                <a href="https://www.facebook.com/MondreemLLC" class="fb-href"
+                  ><img
+                    src="/img/svgs/facebook_3.svg"
+                    class="ft-sm grey-logo fb-logo"
+                    alt="facebook logo"
+                /></a>
+                <a href="https://twitter.com/mondreeml"
+                  ><img
+                    src="/img/svgs/twitter_3.svg"
+                    class="ft-sm grey-logo tw-logo"
+                    alt="twitter logo"
+                /></a>
+                <a href="https://www.instagram.com/mondreem_official/"
+                  ><img
+                    src="/img/svgs/instagram_3.svg"
+                    class="ft-sm grey-logo ig-logo"
+                    alt="instagram logo"
+                /></a>
+                <a href="https://www.behance.net/mr_monkhtof715"
+                  ><img
+                    src="/img/svgs/behance_3.svg"
+                    class="ft-sm grey-logo be-logo"
+                    alt="behance logo"
+                /></a>
+                <a href="https://www.pinterest.ca/mondreem/"
+                  ><img
+                    src="/img/svgs/pinterest_3.svg"
+                    class="ft-sm grey-logo pi-logo"
+                    alt="pinterest logo"
+                /></a>
+                <a href="https://www.facebook.com/MondreemLLC"
+                  ><img
+                    src="/img/svgs/facebook.svg"
+                    class="ft-sm color-logo fb-logo"
+                    alt="facebook logo"
+                /></a>
+                <a href="https://twitter.com/mondreeml"
+                  ><img
+                    src="/img/svgs/twitter.svg"
+                    class="ft-sm color-logo tw-logo"
+                    alt="twitter logo"
+                /></a>
+                <a href="https://www.instagram.com/mondreem_official/"
+                  ><img
+                    src="/img/svgs/instagram.svg"
+                    class="ft-sm color-logo ig-logo"
+                    alt="instagram logo"
+                /></a>
+                <a href="https://www.behance.net/mr_monkhtof715"
+                  ><img
+                    src="/img/svgs/behance.svg"
+                    class="ft-sm color-logo be-logo"
+                    alt="behance logo"
+                /></a>
+                <a href="https://www.pinterest.ca/mondreem/"
+                  ><img
+                    src="/img/svgs/pinterest.svg"
+                    class="ft-sm color-logo pi-logo"
+                    alt="pinterest logo"
+                /></a>
+              </div>
+              <div>
+                <div class="footer-links">
+                  <a href="/about">About</a>
+                  <a href="/careers">Careers</a>
+                  <a href="/contact">Contact</a>
+                  <a href="/legal">Legal Notice</a>
+                </div>
+                <p class="footer-text">
+                  &copy 2020 Mondreem. All rights reserved
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main menu -->
+    <header class="uni-header">
+      <div class="uni-menu-wrapper">
+        <ul class="uni-menu">
+              <li></li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
+         <a href="/"><div class="mondreem-main-logo-dark"></div></a>
+          <li>
+            <a href="/residences">Residences</a>
+          </li>
+          <li>
+            <a href="/atelier">Atelier</a>
+          </li>
+                <li></li>
+        </ul>
+      </div>
+    </header>
+
+    
+<main class="projects-main">
+  <h2 class="projects-header-text">Selected projects</h2>
+  <div class="projects-dropdown">
+    <select name="projects" id="project-selector">
+      <option value="all">View All</option>
+      <option value="residential">Residential</option>
+      <option value="commercial">Commercial</option>
+    </select>
+  </div>
+  <div class="projects-buttons">
+    <div>
+      <button id="button-residential">Residential</button>
+      <img src="/img/pages/projects/arrow_down.png" class="projects-arrow hidden-arrow"/>
+    </div>
+    <div>
+      <button id="button-commercial">Commercial</button>
+      <img src="/img/pages/projects/arrow_down.png" class="projects-arrow hidden-arrow"/>
+    </div>
+    <div>
+      <button id="button-all" class="projects-selected">View All</button>
+      <img src="/img/pages/projects/arrow_down.png" class="projects-arrow shown-arrow"/>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/atlantic/">
+        <img src="/img/pages/projects/projects-atlantic-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-atlantic-2.jpg"/>
+        <img src="/img/pages/projects/projects-atlantic-3.jpg"/>
+        
+      </a>
+      <a href="/select/atlantic/" class="projects-overlay"></a>
+      <a href="/select/atlantic/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/atlantic/">
+        <h5>ATLANTIC PENTHOUSE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-3">
+      <a href="/select/ame/">
+        <img src="/img/pages/projects/projects-ame-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-ame-2.jpg"/>
+        <img src="/img/pages/projects/projects-ame-3.jpg"/>
+      </a>
+      <a href="/select/ame/" class="projects-overlay"></a>
+      <a href="/select/ame/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/ame/">
+      <h5>Ame concept store</h5>
+      <p>Commercial store</p>
+    </a>
+    </div>
+  </div>
+  <div class="projects-content residential projects-meru">
+    <div class="projects-grid-3">
+      <a href="#" onClick="return false;">
+        <img src="/img/pages/projects/projects-meru-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-meru-2.jpg"/>
+        <img src="/img/pages/projects/projects-meru-3.jpg"/>
+      </a>
+      
+    </div>
+    <div class="projects-flexbox">
+      <a href="#" onClick="return false;">
+        <h5>MERU PENTHOUSE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+    <div class="projects-meru-cs">Coming Soon</div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-3">
+      <a href="/select/olympic/">
+        <img src="/img/pages/projects/projects-olympic-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-olympic-2.jpg"/>
+        <img src="/img/pages/projects/projects-olympic-3.jpg"/>
+      </a>
+      <a href="/select/olympic/" class="projects-overlay"></a>
+      <a href="/select/olympic/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/olympic/">
+        <h5>OLYMPIC NINE OFFICE</h5>
+        <p>PRIVATE OFFICE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-3">
+      <a href="/select/isaia/">
+        <img src="/img/pages/projects/projects-isaia-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-isaia-2.jpg"/>
+        <img src="/img/pages/projects/projects-isaia-3.jpg"/>
+      </a>
+      <a href="/select/isaia/" class="projects-overlay"></a>
+      <a href="/select/isaia/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/isaia/">
+        <h5>ISAIA STORE</h5>
+        <p>COMMERCIAL STORE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/buenavista/">
+        <img src="/img/pages/projects/projects-buenavista-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-buenavista-2.jpg"/>
+        <img src="/img/pages/projects/projects-buenavista-3.jpg"/>
+      </a>
+      <a href="/select/buenavista/" class="projects-overlay"></a>
+      <a href="/select/buenavista/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/buenavista/">
+        <h5>BUENA VISTA VILLA</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/magnolia/">
+        <img src="/img/pages/projects/projects-magnolia-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-magnolia-2.jpg"/>
+        <img src="/img/pages/projects/projects-magnolia-3.jpg"/>
+      </a>
+      <a href="/select/magnolia/" class="projects-overlay"></a>
+      <a href="/select/magnolia/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/magnolia/">
+        <h5>MAGNOLIA RESIDENCE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/addis/">
+        <img src="/img/pages/projects/projects-addis-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-addis-2.jpg"/>
+        <img src="/img/pages/projects/projects-addis-3.jpg"/>
+      </a>
+      <a href="/select/addis/" class="projects-overlay"></a>
+      <a href="/select/addis/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/addis/">
+        <h5>ADDIS VIEW VILLA</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/sahara/">
+        <img src="/img/pages/projects/projects-sahara-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-sahara-2.jpg"/>
+        <img src="/img/pages/projects/projects-sahara-3.jpg"/>
+      </a>
+      <a href="/select/sahara/" class="projects-overlay"></a>
+      <a href="/select/sahara/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/sahara/">
+        <h5>SAHARA PENTHOUSE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/khuush/">
+        <img src="/img/pages/projects/projects-khuush-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-khuush-2.jpg"/>
+        <img src="/img/pages/projects/projects-khuush-3.jpg"/>
+      </a>
+      <a href="/select/khuush/" class="projects-overlay"></a>
+      <a href="/select/khuush/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/khuush/">
+        <h5>KHUUSH VALLEY RESIDENCE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/time/">
+        <img src="/img/pages/projects/projects-time-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-time-2.jpg"/>
+        <img src="/img/pages/projects/projects-time-3.jpg"/>
+      </a>
+      <a href="/select/time/" class="projects-overlay"></a>
+      <a href="/select/time/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/time/">
+        <h5>TIME RESIDENCE</h5>
+        <p>PRIVATE RESIDENCE</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-1">
+      <a href="/select/parktwin/"><img src="/img/pages/projects/projects-parktwin.jpg"/></a>
+      <a href="/select/parktwin/" class="projects-overlay"></a>
+      <a href="/select/parktwin/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/parktwin/">
+        <h5>PARK TWIN TOWER</h5>
+        <p>COMMERCIAL BUILDING</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-1">
+      <a href="/select/mandala/"><img src="/img/pages/projects/projects-mandala.jpg"/></a>
+      <a href="/select/mandala/" class="projects-overlay"></a>
+      <a href="/select/mandala/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/mandala/">
+        <h5>MANDALA TOWER</h5>
+        <p>COMMERCIAL BUILDING</p>
+      </a>
+    </div>
+  </div>
+  <div class="projects-content commercial">
+    <div class="projects-grid-3">
+      <a href="/select/rolex/">
+        <img src="/img/pages/projects/projects-rolex-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-rolex-2.jpg"/>
+        <img src="/img/pages/projects/projects-rolex-3.jpg"/>
+      </a>
+      <a href="/select/rolex/" class="projects-overlay"></a>
+      <a href="/select/rolex/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/rolex/">
+        <h5>ROLEX STORE</h5>
+        <p>COMMERCIAL STORE</p>
+      </a>
+    </div>
+  </div>
+ 
+
+  
+
+  </div>
+</main>
+
+
+    <div class="end-note ">
+      <h5>Let's work together</h5>
+      <p>
+        If you would like to discuss a future interior design project, or learn
+        more about Mondreem, please contact us.
+      </p>
+      <a href="/contact" class="btn end-btn" id="modal-btn">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- Modal contact form -->
+<section id="my-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="modal-close"
+        ><img src="/img/pages/modal-close.png" alt=""
+      /></span>
+      <p>Receive our newsletter</p>
+      <h5>Discover Mondreem</h5>
+      <p class="modal-subtext">
+        <br />
+        Be the first to hear about our latest projects
+      </p>
+    </div>
+    <div class="modal-body">
+      <form action="post">
+        <input
+          type="text"
+          id="first-name"
+          class="modal-input"
+          placeholder="Full name"
+        />
+        <input
+          type="text"
+          id="email-address"
+          class="modal-input"
+          placeholder="Email Address"
+        />
+        <button class="btn modal-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+  
+    <!-- Footer -->
+    <footer class="footer-actual">
+      <div class="footer-container">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/MondreemLLC" class="fb-href"
+            ><img
+              src="/img/svgs/facebook_3.svg"
+              class="ft-sm grey-logo fb-logo"
+              alt="facebook logo"
+          /></a>
+          <a href="https://twitter.com/mondreeml"
+            ><img
+              src="/img/svgs/twitter_3.svg"
+              class="ft-sm grey-logo tw-logo"
+              alt="twitter logo"
+          /></a>
+          <a href="https://www.instagram.com/mondreem_official/"
+            ><img
+              src="/img/svgs/instagram_3.svg"
+              class="ft-sm grey-logo ig-logo"
+              alt="instagram logo"
+          /></a>
+          <a href="https://www.behance.net/mr_monkhtof715"
+            ><img
+              src="/img/svgs/behance_3.svg"
+              class="ft-sm grey-logo be-logo"
+              alt="behance logo"
+          /></a>
+          <a href="https://www.pinterest.ca/mondreem/"
+            ><img
+              src="/img/svgs/pinterest_3.svg"
+              class="ft-sm grey-logo pi-logo"
+              alt="pinterest logo"
+          /></a>
+          <a href="https://www.facebook.com/MondreemLLC"
+            ><img
+              src="/img/svgs/facebook.svg"
+              class="ft-sm color-logo fb-logo"
+              alt="facebook logo"
+          /></a>
+          <a href="https://twitter.com/mondreeml"
+            ><img
+              src="/img/svgs/twitter.svg"
+              class="ft-sm color-logo tw-logo"
+              alt="twitter logo"
+          /></a>
+          <a href="https://www.instagram.com/mondreem_official/"
+            ><img
+              src="/img/svgs/instagram.svg"
+              class="ft-sm color-logo ig-logo"
+              alt="instagram logo"
+          /></a>
+          <a href="https://www.behance.net/mr_monkhtof715"
+            ><img
+              src="/img/svgs/behance.svg"
+              class="ft-sm color-logo be-logo"
+              alt="behance logo"
+          /></a>
+          <a href="https://www.pinterest.ca/mondreem/"
+            ><img
+              src="/img/svgs/pinterest.svg"
+              class="ft-sm color-logo pi-logo"
+              alt="pinterest logo"
+          /></a>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/careers">Careers</a>
+            <a href="/contact">Contact</a>
+            <a href="/legal">Legal Notice</a>
+          </div>
+          <p class="footer-text">&copy 2020 Mondreem. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/modal.js"></script><script src="/js/projects.js"></script>
+  </body>
+</html>
