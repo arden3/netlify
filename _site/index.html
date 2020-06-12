@@ -144,7 +144,18 @@
             id="md-video"
           >
             >
-            <source src="/img/home-hero.m4v" type="video/mp4" />
+            <source src="/img/home-hero.m4v" type="video/mp4" media="all and (min-width: 768 px)"/>
+          </video>
+          <video
+            class="home-hero-content"
+            autoplay
+            muted
+            loop
+            poster="/img/home-hero-poster.jpg"
+            id="md-video-mobile"
+          >
+            >
+            <source src="/img/home-hero-phone.m4v" type="video/mp4" media="all and (max-width: 767 px)"/>
           </video>
         </div>
         <div class="home-main-menu">

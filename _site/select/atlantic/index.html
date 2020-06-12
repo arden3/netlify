@@ -221,21 +221,23 @@
       </p>
     </div>
     <div class="modal-body">
-      <form action="post">
-        <input
-          type="text"
-          id="first-name"
-          class="modal-input"
-          placeholder="Full name"
-        />
-        <input
-          type="text"
-          id="email-address"
-          class="modal-input"
-          placeholder="Email Address"
-        />
-        <button class="btn modal-btn">Subscribe</button>
-      </form>
+          <form name="magazine" method="POST" data-netlify="true">
+            <input
+              type="text"
+              name="name"
+              id="first-name"
+              class="modal-input"
+              placeholder="Full name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email-address"
+              class="modal-input"
+              placeholder="Email Address"
+            />
+            <button class="btn modal-btn" type="submit">Subscribe</button>
+          </form>
     </div>
   </div>
 </section>

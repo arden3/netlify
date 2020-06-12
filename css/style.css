@@ -208,7 +208,17 @@ h5 {
   .mondreem-main-logo {
     width: 32px;
     height: 32px;
-    margin: 50px 0 0 50px;
+    margin: 65px 0 0 50px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: center center/contain no-repeat
+      url("/img/svgs/mondreem-logo-icon-white.svg");
+  }
+
+  .mondreem-main-logo-dark {
+    width: 32px;
+    height: 32px;
+    margin: 65px 0 0 50px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: center center/contain no-repeat
@@ -227,7 +237,17 @@ h5 {
   }
 
   .mondreem-main-logo {
-    margin: 40px 0 0 50px;
+    margin: 55px 0 0 50px;
+  }
+
+  #md-video {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #md-video-mobile {
+    display: none;
   }
 }
 
