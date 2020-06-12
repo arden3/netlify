@@ -802,6 +802,69 @@
   height: 25vw;
 }
 
+.contact-main-input {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-input-ph {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  padding-left: 5px;
+  justify-items: start;
+  align-items: start;
+}
+
+.contact-input-main {
+  width: 100%;
+  height: 150px;
+  padding: 5px 0 0 5px;
+}
+
+.contact-input-ph::-webkit-input-placeholder {
+  color: #a4a4a4;
+  font-family: "Optima", "Times New Roman", Times, serif;
+}
+
+.contact-input-ph::-moz-placeholder {
+  color: #a4a4a4;
+  font-family: "Optima", "Times New Roman", Times, serif;
+}
+
+.contact-input-main::-webkit-input-placeholder {
+  color: #a4a4a4;
+  font-family: "Optima", "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.contact-input-main::-moz-placeholder {
+  color: #a4a4a4;
+  font-family: "Optima", "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.contact-btn {
+  display: block;
+  cursor: pointer;
+  font: 10px "Blair";
+  height: 34px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.contact-btn:hover {
+  background: var(--md-brown);
+  transition: all 0.2s ease-out;
+  /* border-bottom: 1px solid #000; */
+}
+
 @media only screen and (max-width: 1199px) {
   .contact-wrapper {
     width: 80%;
@@ -809,6 +872,10 @@
 
   .contact-upper {
     margin-top: 20px;
+    width: 65%;
+  }
+
+  .contact-main-input {
     width: 65%;
   }
 
@@ -858,6 +925,10 @@
 
   .contact-upper {
     margin-top: 0;
+    width: 80%;
+  }
+
+  .contact-main-input {
     width: 80%;
   }
 

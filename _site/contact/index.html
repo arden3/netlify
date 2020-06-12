@@ -159,10 +159,41 @@
       <h5>Contact us</h5>
       <p>
         Whether you want to work with us or are interested in learning more
-        about what we do, we’d love to hear from you. You can reach us at one of
-        our offices below.
+        about what we do, we’d love to hear from you. You can reach us using
+        this form or through one of our offices below.
       </p>
     </div>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      class="contact-main-input"
+    >
+      <div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-input-ph"
+        />
+      </div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email Address"
+          class="contact-input-ph"
+        />
+      </div>
+      <div>
+        <textarea
+          name="message"
+          placeholder="Type your message here"
+          class="contact-input-main"
+        ></textarea>
+      </div>
+      <button type="submit" class="contact-btn">Send</button>
+    </form>
     <div class="contact-grid">
       <div class="contact-content contact-first-class">
         <div id="map">
