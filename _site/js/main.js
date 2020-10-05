@@ -21,7 +21,7 @@ if (a.matches) {
     mouseDrag: true,
     autoplayButtonOutput: false,
     nav: false,
-    items: 1.2,
+    items: 1.5,
     gutter: 10,
     controls: false
   })
@@ -37,6 +37,7 @@ if (b.matches) {
     mouseDrag: true,
     controlsContainer: '#home-slider-control-1',
     autoplayButtonOutput: false,
+    nav: false,
     mode: 'gallery'
   })
 } else {
@@ -48,8 +49,10 @@ if (b.matches) {
     // mouseDrag: true,
     controlsContainer: '#home-slider-control-1',
     autoplayButtonOutput: false,
+    nav: false,
+    touch: false
     // controls: false,
-    mode: 'gallery'
+    // mode: 'gallery'
   })
 }
 

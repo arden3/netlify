@@ -5,7 +5,7 @@
   --projects-bg: #1c1a18;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Blair";
   font-weight: 200;
   src: url("/assets/blair_itc_light.ttf");
@@ -33,7 +33,7 @@
   font-family: "Optima";
   font-weight: 500;
   src: url("/assets/optima_bold.ttf");
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -42,8 +42,9 @@
 }
 
 html {
-  font-family: "Optima", "Times New Roman", Times, serif;
+  /* font-family: "Optima", "Times New Roman", Times, serif; */
   font-weight: 300;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -67,50 +68,53 @@ img {
 }
 
 h1 {
-  font-family: Blair;
-  font-weight: 500;
-  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 4rem;
-  color: #000;
+  color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   margin-top: -5px;
 }
 
 h2 {
-  font-family: Blair;
-  font-weight: 300;
-  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 h3 {
-  font-family: Blair;
+  font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 36px;
   align-items: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
 }
 
 h4 {
-  font-family: Blair;
-  font-weight: 200;
-  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 48px;
-  letter-spacing: 0.08em;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
 }
 
 h5 {
-  font-family: Blair;
-  font-weight: 300;
-  font-size: 0.8rem;
-  color: #000;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
-  padding: 40px 0;
+  letter-spacing: 2px;
 }
 
 .wrapper-70 {
@@ -160,28 +164,23 @@ h5 {
 .home-main-menu > ul > li > a {
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Blair";
-  font-size: 10px;
-  font-weight: 200;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
   text-transform: uppercase;
+}
+
+.home-main-menu > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .mondreem-main-logo {
   width: 150px;
   height: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   padding-right: 10px;
   background: center center/contain no-repeat
     url("/img/svgs/mondreem-logo-white.svg");
-}
-
-.mondreem-main-logo-dark {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 40px;
-  padding-right: 10px;
-  background: center center/contain no-repeat
-    url("/img/svgs/mondreem-logo-black.svg");
 }
 
 .home-hero-text {
@@ -196,7 +195,7 @@ h5 {
 .home-hero-text > h2 {
   color: rgba(0, 0, 0, 0.85);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 4px;
 }
 
@@ -228,7 +227,7 @@ h5 {
 
 @media only screen and (max-width: 767px) {
   .home-hero-content {
-    height: 92vh;
+    height: 100vh;
   }
 
   .home-hero-text > h2 {
@@ -256,20 +255,28 @@ h5 {
 --------------SECTION SERVICES-----------------
 ******************************************** */
 .home-services-content {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 130px;
 }
 
 .home-services-content .scp-1 {
-  font-size: 1.2rem;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
   padding: 0 30px;
   text-align: center;
+  text-transform: uppercase;
+  line-height: 26px;
 }
 
 .home-services-content .scp-2 {
+  width: 80%;
+  margin: 0 auto;
   padding-top: 30px;
-  text-align: justify;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .home-services-content .scp-button {
@@ -277,22 +284,20 @@ h5 {
 }
 
 .home-services-links {
-  width: 70%;
-  margin: 64px auto;
+  width: 60%;
+  margin: 150px auto 115px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
 .home-services-links > div {
   -webkit-filter: contrast(75%) brightness(120%) grayscale(100%);
   filter: contrast(75%) brightness(120%) grayscale(100%);
-  font: 1.1rem "Blair";
   color: rgba(0, 0, 0, 0.5);
-  font-weight: 200;
+  font: 14px Lato;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
 }
 
 .home-services-links > div:hover {
@@ -308,6 +313,7 @@ h5 {
 
 .home-services-links p {
   padding-top: 15px;
+  padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -338,7 +344,8 @@ h5 {
 
 @media only screen and (max-width: 767px) {
   .home-services-content {
-    width: 70%;
+    margin-top: 95px;
+    width: 95%;
   }
 
   .home-services-links {
@@ -373,7 +380,7 @@ h5 {
 .home-projects-flex {
   display: flex;
   width: 70%;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 
 .home-projects-flex > .home-project-item {
@@ -397,10 +404,6 @@ h5 {
   top: 10%;
 }
 
-.home-project-item > a > h3 {
-  font-size: 18px;
-}
-
 .home-project-item > p {
   position: absolute;
   top: 20%;
@@ -416,13 +419,18 @@ h5 {
 
 .home-project-item > a > h3:hover {
   color: #000;
-  font-weight: 300;
 }
 
 .p-container {
   position: relative;
   width: 50%;
   height: 560px;
+}
+
+.p-container > a > .p-image-eth {
+  height: 100%;
+  width: 100%;
+  background: center center/cover url("/img/projects-slider-eth.jpg");
 }
 
 .p-container > a > .p-image-1 {
@@ -489,6 +497,14 @@ h5 {
     text-align: center;
   }
 
+  .home-project-item > a {
+    left: 10%;
+    top: 15%;
+    transform: translateX(-50%);
+    transform: translatey(-15%);
+    align-content: center;
+  }
+
   .home-project-item > .p-btn {
     left: 50%;
     transform: translateX(-50%);
@@ -531,12 +547,6 @@ h5 {
 
   .home-sc1-right {
     top: 592px;
-  }
-
-  .home-project-item > .p-btn {
-    height: 40px;
-    line-height: 20px;
-    width: 250px;
   }
 }
 
@@ -592,7 +602,6 @@ h5 {
   }
 
   .p-overlay-text .pot-2 {
-    font-family: Blair;
     font-weight: 300;
     font-size: 8px;
     line-height: 4px;
@@ -607,7 +616,7 @@ h5 {
 ******************************************** */
 
 .at-container {
-  margin-top: 100px;
+  margin-top: 210px;
   height: 50vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -639,17 +648,12 @@ h5 {
 
 .at-content > h3 {
   padding-bottom: 30px;
-  font-size: 20px;
-}
-
-.at-content > p {
-  font-size: 16px;
 }
 
 .at-content .at-btn {
   margin: 25% auto 10%;
 }
-
+/* 
 .grayscale {
   -webkit-filter: contrast(75%) brightness(120%) grayscale(100%);
   filter: contrast(75%) brightness(120%) grayscale(100%);
@@ -672,7 +676,7 @@ h5 {
   height: 100%;
   width: 100%;
   text-align: center;
-  /* padding-top: 1rem; */
+  /* padding-top: 1rem; */ /*
   opacity: 0;
 }
 
@@ -735,7 +739,7 @@ h5 {
 
 .at-table > .at-overlay > .btn-transparent:hover {
   color: var(--md-brown);
-}
+} */
 
 @media only screen and (max-width: 1199px) {
   .at-container {
@@ -749,14 +753,14 @@ h5 {
     grid-row: 1/3;
   }
 
-  .grayscale {
+  /* .grayscale {
     -webkit-filter: grayscale(0%);
     filter: none;
   }
 
   .at-overlay {
     opacity: 1;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -783,12 +787,16 @@ h5 {
   .at-content > p {
     margin: 0 auto;
   }
+
+  .at-chair {
+    order: 8;
+  }
 }
 
 /* ********************************************
 --------------SECTION NEWS-----------------
 ******************************************** */
-
+/* 
 .ne-container {
   width: 70%;
   margin: 0 auto;
@@ -824,17 +832,19 @@ h5 {
 .ne-text {
   margin-top: 30px;
   text-align: justify;
-}
+} */
 
-.ne-bottom-text {
-  position: absolute;
-  bottom: 5%;
+.fp-bottom-text {
+  width: 500px;
+  margin: 150px auto;
+  text-align: center;
 }
 
 .ne-social {
   position: relative;
   height: 15px;
   width: 300px;
+  margin: 0 auto;
 }
 
 .ne-social .grey-logo {
@@ -853,7 +863,7 @@ h5 {
   width: 30px;
   opacity: 0;
 }
-
+/* 
 .customize-controls {
   margin: 0;
   padding: 0;
@@ -879,10 +889,10 @@ h5 {
 
 .customize-controls > li:focus {
   outline: none;
-}
+} */
 
 @media only screen and (max-width: 1199px) {
-  .ne-container {
+  /* .ne-container {
     width: 90%;
     margin-top: 80px;
   }
@@ -908,19 +918,21 @@ h5 {
 
   .ne-text {
     font-size: 14px;
-  }
+  } */
 
-  .ne-bottom-text {
+  .fp-bottom-text {
+    width: 320px;
+    margin: 50px auto 100px;
     font-size: 14px;
   }
 
   .ne-social {
-    width: 260px;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .ne-container {
+  /* .ne-container {
     width: 80%;
     flex-direction: column;
     position: relative;
@@ -973,15 +985,7 @@ h5 {
   }
   .ne-text {
     font-size: 16px;
-  }
-
-  .ne-bottom-text {
-    font-size: 16px;
-  }
-
-  .ne-social {
-    width: 100%;
-  }
+  } */
 }
 
 /* ********************************************
@@ -1002,13 +1006,11 @@ h5 {
   margin: 0 auto;
 }
 
-.co-upper > h4,
+.co-upper > h3 {
+  margin-bottom: 40px;
+}
+
 .co-lower-content > div > h4 {
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #000;
-  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
@@ -1114,18 +1116,16 @@ h5 {
 }
 
 .footer-links > a {
-  font-family: "Blair";
-  font-weight: 300;
-  font-size: 10px;
+  font-family: "Lato";
+  font-size: 12px;
   text-transform: uppercase;
   padding-right: 25px;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .footer-text {
-  font-family: "Blair";
-  font-weight: 300;
-  font-size: 8px;
+  font-family: "Lato";
+  font-size: 10px;
   text-transform: uppercase;
   padding-top: 50px;
   text-align: center;
@@ -1272,20 +1272,20 @@ h5 {
 .btn {
   display: block;
   cursor: pointer;
-  font: 8px "Blair";
+  font-size: 10px;
   height: 28px;
   width: 180px;
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0;
   text-transform: uppercase;
 }
 
 .btn-transparent {
   display: block;
   cursor: pointer;
-  font: 0.8rem "Blair";
+  font: 0.8rem;
   height: 28px;
   width: 180px;
   text-align: center;
