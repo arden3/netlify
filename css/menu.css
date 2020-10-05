@@ -9,7 +9,7 @@
 
 .menu-wrap .menu-toggler {
   position: absolute;
-  top: 60px;
+  top: 64px;
   right: 5%;
   z-index: 2;
   cursor: pointer;
@@ -21,7 +21,7 @@
 
 .menu-wrap .proj-hamburger {
   position: absolute;
-  top: 60px;
+  top: 64px;
   right: 5%;
   z-index: 1;
   width: 60px;
@@ -34,7 +34,7 @@
 
 .menu-wrap .hamburger {
   position: absolute;
-  top: 60px;
+  top: 64px;
   right: 5%;
   z-index: 1;
   width: 60px;
@@ -47,7 +47,7 @@
 
 .menu-wrap .home-hamburger {
   position: absolute;
-  top: 60px;
+  top: 64px;
   right: 5%;
   z-index: 1;
   width: 60px;
@@ -126,7 +126,7 @@
 }
 
 .menu-wrap > .no-header-hamburger > div {
-  background-color: rgb(75, 75, 75);
+  background-color: #aaa;
 }
 
 .menu-wrap .proj-hamburger > div:after {
@@ -303,17 +303,41 @@
 }
 
 .ham-menu-wrapper > li > a {
-  color: rgba(0, 0, 0, 0.85);
-  font-family: "Blair";
-  font-size: 10px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Lato";
+  font-size: 14px;
   font-weight: 200;
   text-transform: uppercase;
 }
 
+.ham-menu-wrapper > li > a:hover {
+  /* font-weight: 700; */
+  color: #000;
+}
+
 .ham-menu-wrapper > a > img {
   width: 150px;
-  margin-bottom: 40px;
+  height: 150px;
+  margin-bottom: 48px;
   padding-right: 10px;
+}
+
+.mondreem-main-logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 48px;
+  padding-right: 10px;
+  background: center center/contain no-repeat
+    url("/img/svgs/mondreem-logo-white.svg");
+}
+
+.mondreem-main-logo-dark-large {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 48px;
+  padding-right: 10px;
+  background: center center/contain no-repeat
+    url("/img/svgs/mondreem-logo-black.svg");
 }
 
 @media only screen and (max-width: 1199px) {
@@ -321,10 +345,10 @@
     display: none;
   }
 
-  .mondreem-main-logo {
+  .mondreem-main-logo-dark-large {
     width: 32px;
     height: 32px;
-    margin: 50px 0 0 50px;
+    margin: 65px 0 0 50px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: center center/contain no-repeat
@@ -333,8 +357,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .mondreem-main-logo {
-    margin: 40px 0 0 50px;
+  .mondreem-main-logo-dark-large {
+    margin: 55px 0 0 50px;
   }
 }
 
@@ -359,20 +383,20 @@
 }
 
 .menu-wrap .ham-menu .ham-menu-list li a {
-  font-family: Blair;
-  font-weight: 200;
-  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
   line-height: 8px;
   color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
 
 .menu-wrap .ham-menu .ham-menu-list li a:hover {
-  font-weight: 300;
+  /* font-weight: 700; */
   color: #000;
 }
 
-@media only screen and (max-width: 1399px) {
+/* @media only screen and (max-width: 1399px) {
   .menu-wrap .ham-menu .ham-menu-list li {
     margin-bottom: 20px;
   }
@@ -382,18 +406,18 @@
   .menu-wrap .ham-menu .ham-menu-list li {
     margin-bottom: 15px;
   }
-}
+} */
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 767px) {
   .menu-wrap .ham-menu .ham-menu-list {
     top: 10%;
     height: 70%;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .menu-wrap .ham-menu .ham-menu-list li {
     margin-bottom: 24px;
+  }
+  .menu-wrap .ham-menu .ham-menu-list li a {
+    font-size: 14px;
   }
 }
 
