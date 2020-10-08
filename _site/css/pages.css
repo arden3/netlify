@@ -87,7 +87,7 @@
 .proj-go-back {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Blair";
+  font-family: "Lato";
   font-size: 10px;
   font-weight: 200;
   text-transform: uppercase;
@@ -117,7 +117,7 @@
 .proj-go-back {
   position: fixed;
   left: 5%;
-  top: 77px;
+  top: 69px;
   line-height: 50px;
   text-align: center;
   align-items: center;
@@ -168,8 +168,9 @@
   text-align: justify;
 }
 
-.about-text > h5 {
-  font-size: 1rem;
+.about-text > h4 {
+  padding-top: 30px;
+  line-height: 28px;
 }
 
 .about-subtitle {
@@ -180,9 +181,10 @@
 }
 
 .about-subtitle > p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  /* font-weight: 500; */
+  font: 18px Lato;
+  line-height: 26px;
+  padding-bottom: 40px;
 }
 
 .about-subtitle > img {
@@ -206,8 +208,12 @@
   flex-direction: column;
 }
 
-.about-gallery-inner > div > h5 {
-  font-size: 1rem;
+.about-gallery-inner > div > h4 {
+  padding: 25px 0 10px 0;
+}
+
+.about-gallery-inner > div > p {
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -218,9 +224,8 @@
     grid-gap: 30px;
   }
 
-  .about-text > h5 {
-    font-size: 1rem;
-    padding: 20px 0 5px 0;
+  .about-text > h4 {
+    padding-top: 10px;
   }
 
   .about-subtitle {
@@ -265,7 +270,7 @@
     position: relative;
   }
 
-  .about-text > h5 {
+  .about-text > h4 {
     position: absolute;
     top: 0;
     left: 50%;
@@ -304,7 +309,8 @@
     margin-left: 0;
   }
 
-  .about-gallery-inner > div > h5 {
+  .about-gallery-inner > div > h4 {
+    padding-top: 30px;
     padding-bottom: 20px;
   }
 
@@ -387,7 +393,7 @@
 
 .atelier-content {
   width: 64%;
-  margin: 160px auto 200px;
+  margin: 160px auto 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -396,15 +402,11 @@
   width: 75%;
   height: 75%;
   margin: auto auto;
-}
-
-.atelier-content > div > h5 {
-  padding-bottom: 30px;
-  padding-top: 0;
+  text-align: center;
 }
 
 .atelier-content > div > p {
-  text-align: justify;
+  line-height: 24px;
 }
 
 .atelier-content > .atelier-p1 {
@@ -433,7 +435,7 @@
   text-transform: uppercase;
   top: 60%;
   left: 55%;
-  font-family: Blair;
+  font-family: Lato;
   font-weight: 200;
   font-size: 18px;
   line-height: 12px;
@@ -461,12 +463,16 @@
   }
 
   .atelier-content > div {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
 
   .atelier-content > div > h5 {
     padding-bottom: 15px;
+  }
+
+  .atelier-content > div > p {
+    line-height: 20px;
   }
 
   .atelier-lower > h1 {
@@ -549,9 +555,8 @@
   order: 2;
 }
 
-.careers-text > h5 {
-  font-size: 20px;
-  padding-top: 0;
+.careers-text > h4 {
+  padding: 30px 0 20px 0;
 }
 
 .careers-text > ul {
@@ -579,28 +584,23 @@
   margin-bottom: -100px;
 }
 
-.careers-content-2 > div > h6,
-.careers-content-3 > div > h6 {
-  /* font-family: Blair; */
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #000;
+.careers-content-2 > div > h5,
+.careers-content-3 > div > h5 {
   vertical-align: text-top;
   position: relative;
 }
 
 .career-arrow {
-  width: 16px;
+  width: 12px;
   display: inline-block;
   margin-left: 20px;
   position: absolute;
-  bottom: -4px;
+  bottom: 1px;
   transform: translateY(-50%);
 }
 
 .careers-content-2:hover {
-  background-color: #e5e5e5;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -628,10 +628,8 @@
     display: block;
   }
 
-  .careers-content-2 > div > h6,
-  .careers-content-3 > div > h6 {
-    font-size: 10px;
-    line-height: 24px;
+  .careers-content-2 > div > h5,
+  .careers-content-3 > div > h5 {
     padding: 20px 0;
   }
 
@@ -664,7 +662,7 @@
     margin: 0 auto;
   }
 
-  .careers-text > h5 {
+  .careers-text > h4 {
     position: absolute;
     top: 3%;
     left: 50%;
@@ -683,10 +681,8 @@
     text-align: justify;
   }
 
-  .careers-content-2 > div > h6,
-  .careers-content-3 > div > h6 {
-    font-size: 10px;
-    line-height: 24px;
+  .careers-content-2 > div > h5,
+  .careers-content-3 > div > h5 {
     padding: 20px 0;
   }
 
@@ -763,8 +759,8 @@
   margin: 0 auto;
 }
 
-.contact-upper > h5 {
-  font-size: 20px;
+.contact-upper > h4 {
+  padding-bottom: 30px;
 }
 
 .contact-upper {
@@ -826,30 +822,30 @@
 
 .contact-input-ph::-webkit-input-placeholder {
   color: #a4a4a4;
-  font-family: "Optima", "Times New Roman", Times, serif;
+  font-family: "Lato", "Times New Roman", Times, serif;
 }
 
 .contact-input-ph::-moz-placeholder {
   color: #a4a4a4;
-  font-family: "Optima", "Times New Roman", Times, serif;
+  font-family: "Lato", "Times New Roman", Times, serif;
 }
 
 .contact-input-main::-webkit-input-placeholder {
   color: #a4a4a4;
-  font-family: "Optima", "Times New Roman", Times, serif;
+  font-family: "Lato", "Times New Roman", Times, serif;
   font-size: 16px;
 }
 
 .contact-input-main::-moz-placeholder {
   color: #a4a4a4;
-  font-family: "Optima", "Times New Roman", Times, serif;
+  font-family: "Lato", "Times New Roman", Times, serif;
   font-size: 16px;
 }
 
 .contact-btn {
   display: block;
   cursor: pointer;
-  font: 10px "Blair";
+  font: 10px "Lato";
   height: 34px;
   width: 100%;
   background: #000;
@@ -1033,15 +1029,15 @@
 
 .residences-hero-text-p {
   position: absolute;
-  letter-spacing: 2px;
-  font-family: Lato;
+  /* letter-spacing: 2px; */
   top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 22px;
 }
 
 /* 
@@ -1283,7 +1279,7 @@
 .services-links > div {
   -webkit-filter: contrast(75%) brightness(120%) grayscale(100%);
   filter: contrast(75%) brightness(120%) grayscale(100%);
-  font: 1.1rem "Blair";
+  font: 1.1rem "Lato";
   color: rgba(0, 0, 0, 0.5);
   font-weight: 200;
   text-align: center;
@@ -1766,7 +1762,8 @@
   top: 0;
   height: 100vh;
   width: 100%;
-  background: no-repeat center center/cover url("/img/development-hero.jpg");
+  background: no-repeat center center/cover
+    url("/img/pages/services/development-hero.jpg");
   z-index: -1;
 }
 
@@ -1889,12 +1886,12 @@
 
 .projects-content > div > a > h5 {
   font-size: 12px;
-  padding-top: 24px;
+  padding-top: 10px;
   font-weight: 200;
 }
 
 .projects-content > div > a > p {
-  /* font-family: blair; */
+  /* font-family: Lato; */
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1974,7 +1971,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 40px;
-  font-family: Blair;
+  font-family: Lato;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2002,7 +1999,7 @@
   top: 50%;
   left: 50%;
   text-transform: uppercase;
-  font-family: Blair;
+  font-family: Lato;
   font-weight: 200;
   font-size: 10px;
   color: #fff;
@@ -2026,7 +2023,7 @@
 
   .projects-content > div > a > h5 {
     font-size: 10px;
-    padding-top: 10px;
+    padding-top: 0;
     font-weight: 300;
   }
 
@@ -2058,8 +2055,7 @@
     border: none;
     background: transparent;
     text-transform: uppercase;
-    font-family: Blair;
-    font-weight: 500;
+    font-family: Lato;
     font-size: 10px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -2071,7 +2067,6 @@
   }
 
   .projects-content > div > a > h5 {
-    padding-top: 6px;
     font-weight: 300;
     padding-bottom: 20px;
     order: 5;
@@ -2162,8 +2157,29 @@
 
 .sub-projects-one > div > p {
   color: rgba(255, 255, 255, 0.75);
-  padding-top: 60px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 40px;
+  line-height: 21px;
+}
+
+.sub-projects-textbox {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.sub-projects-textbox > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.sub-projects-textbox > p {
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 30px;
+  line-height: 21px;
 }
 
 .sub-projects-two-text {
@@ -2367,15 +2383,14 @@
 }
 
 .jobs-main > div > h3 {
-  font-size: 18px;
   line-height: 24px;
-  padding-bottom: 50px;
+  padding: 30px 0 50px 0;
   text-align: center;
 }
 
 .jobs-main > div > a {
-  font-family: Blair;
-  font-size: 8px;
+  font-family: Lato;
+  font-size: 10px;
   text-transform: uppercase;
   color: #666;
   font-weight: 200;
@@ -2437,7 +2452,7 @@
 }
 
 .proj-end-note > h5 {
-  font-family: Blair;
+  font-family: Lato;
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
@@ -2495,36 +2510,50 @@
   margin: 25vh auto;
   width: 490px;
   height: 490px;
-  padding: 70px 90px 120px;
+  padding: 40px 50px 50px;
   background: #fff;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation: modalopen 0.4s;
 }
 
-.modal-header > h5 {
-  padding: 5px 0;
-}
-
 .modal-subtext {
   color: #a4a4a4;
+  padding-bottom: 20px;
 }
 
 .modal-input {
   border: none;
   border-bottom: 1px solid #a4a4a4;
-  font-size: 14px;
-  padding: 10px 0;
-  margin: 30px 0;
+  font-size: 12px;
+  padding: 5px 0;
+  margin: 20px 0;
   width: 100%;
 }
 
 .modal-input::-webkit-input-placeholder {
   color: #a4a4a4;
-  font-family: "Lato";
+  font: 12px "Lato";
 }
 .modal-input::-moz-placeholder {
   color: #a4a4a4;
-  font-family: "Lato";
+  font: 12px "Lato";
+}
+
+.modal-input-main {
+  width: 100%;
+  height: 150px;
+  padding: 5px 0 0 5px;
+  border: none;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.modal-input-main::-webkit-input-placeholder {
+  color: #a4a4a4;
+  font: 12px "Lato";
+}
+.modal-input-main::-moz-placeholder {
+  color: #a4a4a4;
+  font: 12px "Lato";
 }
 
 .modal-btn {
@@ -2565,8 +2594,14 @@
     animation: modalopen 0.4s;
   }
 
+  .modal-subtext {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+  }
+
   .modal-input {
-    padding: 10px 0;
-    margin: 15px 0;
+    padding: 5px 0;
+    margin: 10px 0;
   }
 }

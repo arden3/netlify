@@ -212,7 +212,7 @@
     </a>
     </div>
   </div>
-  <div class="projects-content residential projects-meru">
+  <!-- <div class="projects-content residential projects-meru">
     <div class="projects-grid-3">
       <a href="#" onClick="return false;">
         <img src="/img/pages/projects/projects-meru-1.jpg" class="grid-first-child"/>
@@ -228,6 +228,24 @@
       </a>
     </div>
     <div class="projects-meru-cs">Coming Soon</div>
+  </div> -->
+
+  <div class="projects-content residential">
+    <div class="projects-grid-3">
+      <a href="/select/mountainlodge/">
+        <img src="/img/pages/projects/projects-mountainlodge-1.jpg" class="grid-first-child"/>
+        <img src="/img/pages/projects/projects-mountainlodge-2.jpg"/>
+        <img src="/img/pages/projects/projects-mountainlodge-3.jpg"/>
+      </a>
+      <a href="/select/mountainlodge/" class="projects-overlay"></a>
+      <a href="/select/mountainlodge/"><h2 class="projects-hidden">View Project</h2></a>
+    </div>
+    <div class="projects-flexbox">
+      <a href="/select/olympic/">
+        <h5>Mountain Lodge Residence</h5>
+        <p>PRIVATE Residence</p>
+      </a>
+    </div>
   </div>
   <div class="projects-content commercial">
     <div class="projects-grid-3">
@@ -427,20 +445,19 @@
   </section>
 
   <!-- Modal contact form -->
-<section id="my-modal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="modal-close"
-        ><img src="/img/pages/modal-close.png" alt=""
-      /></span>
-      <p>Receive our newsletter</p>
-      <h5>Discover Mondreem</h5>
-      <p class="modal-subtext">
-        <br />
-        Be the first to hear about our latest projects
-      </p>
-    </div>
-    <div class="modal-body">
+    <section id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-close"
+            ><img src="/img/pages/modal-close.png" alt=""
+          /></span>
+          <h4>Contact Mondreem</h4>
+          <p class="modal-subtext">
+            <br />
+            Drop us a note and we'll get back to you!
+          </p>
+        </div>
+        <div class="modal-body">
           <form name="magazine" method="POST" data-netlify="true">
             <input
               type="text"
@@ -456,11 +473,16 @@
               class="modal-input"
               placeholder="Email Address"
             />
-            <button class="btn modal-btn" type="submit">Subscribe</button>
+            <textarea
+              name="message"
+              placeholder="Type your message here"
+              class="modal-input-main"
+            ></textarea>
+            <button class="btn modal-btn" type="submit">Send</button>
           </form>
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
   
     <!-- Footer -->
     <footer class="footer-actual">
