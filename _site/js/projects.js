@@ -19,7 +19,7 @@ buttonEngineering.addEventListener('click', sortEngineering)
 
 function sortResidential () {
   allLinks.forEach(link => link.classList.add('filtered-out'))
-  commercialLinks.forEach(link => link.classList.remove('filtered-out'))
+  residentialLinks.forEach(link => link.classList.remove('filtered-out'))
   // engineeringLinks.forEach(link => link.classList.add('filtered-out'))
   buttonAll.classList.remove('projects-selected')
   buttonCommercial.classList.remove('projects-selected')
