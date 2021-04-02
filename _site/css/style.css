@@ -992,7 +992,7 @@ h5 {
 ******************************************** */
 
 .co-wrapper {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 180px;
 }
@@ -1022,19 +1022,19 @@ h5 {
 
 .co-lower {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-  align-items: center;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-gap: 50px; */
+  align-items: start;
   justify-items: center;
   text-align: center;
   margin-top: 90px;
 }
 
 .co-lower-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
-  align-items: center;
+  align-items: start;
   justify-items: center;
   text-align: center;
 }
@@ -1064,9 +1064,10 @@ h5 {
     margin-top: 85px;
   }
 
-  .co-lower {
+  .co-lower-content {
     grid-gap: 40px;
     margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1077,7 +1078,7 @@ h5 {
     margin: 0 auto;
   }
 
-  .co-lower {
+  /* .co-lower {
     display: block;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
@@ -1085,6 +1086,13 @@ h5 {
     justify-items: center;
     text-align: center;
     margin-top: 90px;
+  } */
+
+  .co-lower-content {
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .co-lower-content > #text {

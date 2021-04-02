@@ -772,7 +772,7 @@
 
 .contact-first-class {
   margin-top: 160px;
-  margin-bottom: 75px;
+  /* margin-bottom: 75px; */
 }
 
 .contact-content {
@@ -909,10 +909,13 @@
 
   .contact-lower-text {
     text-align: center;
+    order: 2;
+    margin-top: 20px;
   }
 
   .contact-upper-text {
-    order: -1;
+    order: 2;
+    margin-top: 20px;
   }
 }
 
@@ -933,14 +936,6 @@
   .contact-grid {
     display: block;
     margin-top: 70px;
-  }
-
-  .contact-lower-text {
-    order: 2;
-  }
-
-  .contact-upper-text {
-    order: 2;
   }
 }
 /* ********************************************
